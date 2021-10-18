@@ -2,7 +2,7 @@
   "name": "onboard",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
-  "main": "./frontend/onboard.jsx",
+  "main": "webpack.config.js",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -11,6 +11,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch --mode=development",
     "postinstall": "webpack"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
   },
   "repository": {
     "type": "git",
