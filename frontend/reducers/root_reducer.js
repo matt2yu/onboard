@@ -6,7 +6,7 @@ const rootReducer = (state = {}, action) => {
   switch(action.type) {
     case RECEIVE_USER:
       const user = action.user
-      return Object.assign({}, {[user.id]: user});
+      return Object.assign({}, user);
     default:
       return state;
   }

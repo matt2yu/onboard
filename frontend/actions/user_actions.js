@@ -5,7 +5,7 @@ export const receiveUser = user => ({
   user
 });
 
-export const requestUser = userId => dispatch => (
+export const requestUser = (userId) => dispatch => (
   fetchUser(userId)
   .then(user => {
     dispatch(receiveUser(user))
@@ -14,6 +14,7 @@ export const requestUser = userId => dispatch => (
   ))
 );
 
+//APItuil
 export const fetchUser = userId => (
   $.ajax({
     method: "GET",

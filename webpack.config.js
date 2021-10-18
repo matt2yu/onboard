@@ -18,7 +18,11 @@ module.exports = {
             presets: ['@babel/env', '@babel/react']
           }
         },
-      }
+      },
+      {
+        test: /.svg$/,
+        use: ['@svgr/webpack'],
+      },
     ]
   },
   devtool: 'source-map',
