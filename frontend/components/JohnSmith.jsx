@@ -22,13 +22,14 @@ function JohnSmith() {
     if (loading) {
       return <div className="loader"></div>
     } else {    
+      console.log(user.profile.twitter_url)
       return (
           <div className="entire-page">
 
           <div className='title'>
-          <Link to={user.profile.website_url}>
+          <Link to={`/${user.profile.website_url}`}>
               <Logo />
-            </Link>
+          </Link>
           </div>
 
           <div className='profile'>
@@ -38,21 +39,21 @@ function JohnSmith() {
           </div>
 
           <div className='social-medias'>
-            <Link className="twitter" to={user.profile.twitter_url}>
+            <Link className="twitter" to={`/${user.profile.twitter_url}`}>
               <Twitter />
             </Link>
 
-            <Link className="instagram" to={user.profile.instagram_url}>
+            <Link className="instagram" to={`/${user.profile.instagram_url}`}>
               <Instagram />
             </Link>
 
-            <Link className="linkedin" to={user.profile.linkedin_ur}>
+            <Link className="linkedin" to={`/${user.profile.linkedin_url}`}>
               <LinkedIn />
             </Link>
           </div>
 
           <div className='powerby'>
-            <Link to={user.profile.website_url}>
+            <Link to={`/${user.profile.website_url}`}>
               <PowerBy />
             </Link>
           </div>
