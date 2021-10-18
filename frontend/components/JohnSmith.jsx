@@ -27,9 +27,9 @@ function JohnSmith() {
           <div className="entire-page">
 
           <div className='title'>
-          <Link to={`/${user.profile.website_url}`}>
-              <Logo />
-          </Link>
+            <a href={user.profile.website_url}>
+                <Logo />
+            </a>
           </div>
 
           <div className='profile'>
@@ -39,23 +39,24 @@ function JohnSmith() {
           </div>
 
           <div className='social-medias'>
-            <Link className="twitter" to={`/${user.profile.twitter_url}`}>
+            <a href={user.profile.twitter_url}>
               <Twitter />
-            </Link>
+            </a>
 
-            <Link className="instagram" to={`/${user.profile.instagram_url}`}>
+            <a href={user.profile.instagram_url}>
               <Instagram />
-            </Link>
+            </a>
+            
 
-            <Link className="linkedin" to={`/${user.profile.linkedin_url}`}>
+            <a href={user.profile.linkedin_url}>
               <LinkedIn />
-            </Link>
+            </a>
           </div>
 
           <div className='powerby'>
-            <Link to={`/${user.profile.website_url}`}>
+            <a href={user.profile.website_url}>
               <PowerBy />
-            </Link>
+            </a>
           </div>
 
 
