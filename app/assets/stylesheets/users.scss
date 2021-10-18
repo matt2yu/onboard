@@ -1,3 +1,68 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  background-color: rgba(215, 219, 243, 0.856);
+}
+
+.entire-page {
+  // display:flex;
+  // flex-direction: column;
+  // max-width: 400px;
+}
+
+.title {
+  margin-left: 45px;
+  padding: 50px;
+}
+
+.profile {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  color: rgba(21, 12, 158, 0.774);
+  z-index: -1;
+  position: relative;
+}
+
+.greeting {
+  margin-left: 10px;
+}
+
+.bio {
+  margin-left: 10px;
+}
+
+.img {
+  object-fit:cover;
+  border-radius: 50%;
+}
+
+.pic {
+  margin-left: 140px;
+  margin-top: -40px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.greeting {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.social-medias {
+  display: flex;
+  margin-left: 120px;
+  margin-top: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100px;
+}
+
+.powerby {
+  margin-left: 90px;
+}

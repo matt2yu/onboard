@@ -31,10 +31,13 @@ function JohnSmith() {
                 <Logo />
             </a>
           </div>
+          <div className='pic'>
+            <img className='img' src={window.propic} alt="johnsmithdude" width='50' height='50' />
+          </div>
 
           <div className='profile'>
-            <img src={window.propic} alt="johnsmithdude" width='50' height='50' />
             <div className='greeting'>Hey I'm {user.first_name} {user.last_name}</div>
+            <br/>
             <div className='bio'>{user.profile.bio}</div>
           </div>
 
@@ -58,7 +61,6 @@ function JohnSmith() {
               <PowerBy />
             </a>
           </div>
-
 
           </div>
         )
